@@ -12,7 +12,7 @@ kickstarter.css("li.project.grid_4").each do |project|
   projects[title] = {
    :image_link => project.css("div.project-thumbnail a img").attribute("src").value,
    :description => project.css("p.bbcard_blurb").text,
-   :location => project.css("ul.project-meta span")
+   :location => project.css("ul.project-meta span.location-time")
   }
 
 end
